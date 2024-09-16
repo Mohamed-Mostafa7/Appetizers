@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Appetizer: Codable {
+struct Appetizer: Codable, Identifiable {
     let id: Int
     let name: String
     let description: String
@@ -32,5 +32,5 @@ struct MockData {
                                            protein: 10,
                                            carbs: 55)
     
-    static let appetizers = [sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer]
+    static let appetizers = [sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
 }
