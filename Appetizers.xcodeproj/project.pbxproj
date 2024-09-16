@@ -16,6 +16,8 @@
 		E97BB5582C9882D0003B9CB5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB5572C9882D0003B9CB5 /* OrderView.swift */; };
 		E97BB55A2C98C975003B9CB5 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB5592C98C975003B9CB5 /* Appetizer.swift */; };
 		E97BB55C2C98D583003B9CB5 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB55B2C98D583003B9CB5 /* AppetizerListCell.swift */; };
+		E97BB55E2C98D747003B9CB5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB55D2C98D747003B9CB5 /* NetworkManager.swift */; };
+		E97BB5602C98DA9A003B9CB5 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB55F2C98DA9A003B9CB5 /* APError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		E97BB5572C9882D0003B9CB5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		E97BB5592C98C975003B9CB5 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		E97BB55B2C98D583003B9CB5 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		E97BB55D2C98D747003B9CB5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E97BB55F2C98DA9A003B9CB5 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				E97BB5572C9882D0003B9CB5 /* OrderView.swift */,
 				E97BB5592C98C975003B9CB5 /* Appetizer.swift */,
 				E97BB55B2C98D583003B9CB5 /* AppetizerListCell.swift */,
+				E97BB55D2C98D747003B9CB5 /* NetworkManager.swift */,
+				E97BB55F2C98DA9A003B9CB5 /* APError.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -153,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97BB55A2C98C975003B9CB5 /* Appetizer.swift in Sources */,
+				E97BB5602C98DA9A003B9CB5 /* APError.swift in Sources */,
 				E97BB55C2C98D583003B9CB5 /* AppetizerListCell.swift in Sources */,
 				E97BB5562C9882BD003B9CB5 /* AccountView.swift in Sources */,
 				E97BB5482C9881C0003B9CB5 /* AppetizerTabView.swift in Sources */,
+				E97BB55E2C98D747003B9CB5 /* NetworkManager.swift in Sources */,
 				E97BB5462C9881C0003B9CB5 /* AppetizersApp.swift in Sources */,
 				E97BB5542C9882A8003B9CB5 /* AppetizerListView.swift in Sources */,
 				E97BB5582C9882D0003B9CB5 /* OrderView.swift in Sources */,
