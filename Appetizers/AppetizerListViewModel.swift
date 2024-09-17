@@ -5,20 +5,31 @@
 //  Created by Mohamed Mostafa on 17/09/2024.
 //
 
-import Foundation
+import SwiftUI
 
 final class AppetizerListViewModel: ObservableObject {
     
     @Published var appetizers: [Appetizer] = []
+    @Published var alertItem: AlertItem?
     
     func getAppetizers() {
-        DispatchQueue.main.async {
-            NetworkManager.shared.getAppetizers { result in
+        
+        NetworkManager.shared.getAppetizers { result in
+            DispatchQueue.main.async { [weak self] in
                 switch result {
                 case .success(let appetizers):
-                    self.appetizers = appetizers
+                    self?.appetizers = appetizers
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    switch error {
+                    case .invalidURL:
+                        self?.alertItem = AlertContext.invalidURL
+                    case .invalidResponse:
+                        self?.alertItem = AlertContext.invalidResponse
+                    case .invalidData:
+                        self?.alertItem = AlertContext.invalidData
+                    case .unableToComplete:
+                        self?.alertItem = AlertContext.unableToComplete
+                    }
                 }
             }
         }
