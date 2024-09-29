@@ -22,6 +22,7 @@
 		E97BB5642C99D95B003B9CB5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB5632C99D95B003B9CB5 /* Alert.swift */; };
 		E97BB5662C9A0901003B9CB5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB5652C9A0901003B9CB5 /* ActivityIndicator.swift */; };
 		E97BB5682C9A0A92003B9CB5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97BB5672C9A0A92003B9CB5 /* Color+Extension.swift */; };
+		E984FEE12CA86E0000D12774 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984FEE02CA86E0000D12774 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E97BB5632C99D95B003B9CB5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E97BB5652C9A0901003B9CB5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E97BB5672C9A0A92003B9CB5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E984FEE02CA86E0000D12774 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				E97BB5632C99D95B003B9CB5 /* Alert.swift */,
 				E97BB5652C9A0901003B9CB5 /* ActivityIndicator.swift */,
 				E97BB5672C9A0A92003B9CB5 /* Color+Extension.swift */,
+				E984FEE02CA86E0000D12774 /* RemoteImage.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				E97BB5482C9881C0003B9CB5 /* AppetizerTabView.swift in Sources */,
 				E97BB55E2C98D747003B9CB5 /* NetworkManager.swift in Sources */,
 				E97BB5462C9881C0003B9CB5 /* AppetizersApp.swift in Sources */,
+				E984FEE12CA86E0000D12774 /* RemoteImage.swift in Sources */,
 				E97BB5642C99D95B003B9CB5 /* Alert.swift in Sources */,
 				E97BB5542C9882A8003B9CB5 /* AppetizerListView.swift in Sources */,
 				E97BB5582C9882D0003B9CB5 /* OrderView.swift in Sources */,
