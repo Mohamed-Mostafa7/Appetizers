@@ -29,9 +29,9 @@ struct AppetizerDetailView: View {
                     .padding()
                 
                 HStack(spacing: 40) {
-                    DetailVStack(name: "Calories", value: "\(appetizer.calories)")
-                    DetailVStack(name: "Carbs", value: "\(appetizer.carbs)")
-                    DetailVStack(name: "Protein", value: "\(appetizer.protein)")
+                    NutritionInfo(title: "Calories", value: appetizer.calories)
+                    NutritionInfo(title: "Carbs", value: appetizer.carbs)
+                    NutritionInfo(title: "Protein", value: appetizer.protein)
                 }
                 
             }
@@ -41,13 +41,7 @@ struct AppetizerDetailView: View {
             Button {
                 print("Tapped")
             } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add To Order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color(.white))
-                    .frame(width: 260, height: 50)
-                    .background(Color(.brandPrimary))
-                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add To Order")
             }
             .padding(.bottom, 30)
 
@@ -57,21 +51,9 @@ struct AppetizerDetailView: View {
         .clipShape(RoundedRectangle(cornerSize: CGSize(width: 12, height: 12)))
         .shadow(radius: 40)
         .overlay(Button(action: {
-            print("dismiss tapped")
             isShowingDetail = false
         }, label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(.white)
-                    .opacity(0.6)
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .foregroundStyle(.black)
-                    .frame(width: 44, height: 44)
-            }
-            .padding(5)
-            
+            XDismissButton()
         }),alignment: .topTrailing)
     }
 }
@@ -81,15 +63,16 @@ struct AppetizerDetailView: View {
                         isShowingDetail: .constant(false))
 }
 
-struct DetailVStack: View {
-    var name: String
-    var value: String
+struct NutritionInfo: View {
+    var title: String
+    var value: Int
+    
     var body: some View {
         VStack(spacing: 5) {
-            Text(name)
+            Text(title)
                 .bold()
                 .font(.caption)
-            Text(value)
+            Text("\(value)")
                 .foregroundStyle(.secondary)
                 .fontWeight(.semibold)
                 .italic()
