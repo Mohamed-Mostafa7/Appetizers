@@ -28,6 +28,7 @@
 		E9DD15B52CAC27690077C121 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15B42CAC27690077C121 /* XDismissButton.swift */; };
 		E9DD15B72CAC48600077C121 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15B62CAC48600077C121 /* AccountViewModel.swift */; };
 		E9DD15B92CAC4DE20077C121 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15B82CAC4DE20077C121 /* String+Extension.swift */; };
+		E9DD15BB2CAC5CFE0077C121 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15BA2CAC5CFE0077C121 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		E9DD15B42CAC27690077C121 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		E9DD15B62CAC48600077C121 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		E9DD15B82CAC4DE20077C121 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E9DD15BA2CAC5CFE0077C121 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E97BB5592C98C975003B9CB5 /* Appetizer.swift */,
+				E9DD15BA2CAC5CFE0077C121 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				E9DD15B72CAC48600077C121 /* AccountViewModel.swift in Sources */,
 				E97BB5622C99CC87003B9CB5 /* AppetizerListViewModel.swift in Sources */,
 				E97BB5662C9A0901003B9CB5 /* ActivityIndicator.swift in Sources */,
+				E9DD15BB2CAC5CFE0077C121 /* User.swift in Sources */,
 				E97BB5562C9882BD003B9CB5 /* AccountView.swift in Sources */,
 				E9DD15B32CAC26240077C121 /* APButton.swift in Sources */,
 				E97BB5482C9881C0003B9CB5 /* AppetizerTabView.swift in Sources */,
