@@ -12,23 +12,32 @@ struct OrderView: View {
     
     var body: some View {
         NavigationView{
-            VStack{
-                
-                List {
-                    ForEach(orderItems) { appetizer in
-                        AppetizerListCell(appetizer: appetizer)
+            ZStack {
+                VStack{
+                    
+                    List {
+                        ForEach(orderItems) { appetizer in
+                            AppetizerListCell(appetizer: appetizer)
+                        }
+                        .onDelete(perform: deleteItem)
                     }
-                    .onDelete(perform: deleteItem)
+                    .listStyle(.plain)
+                    
+                    Button {
+                        print("Place Order Button Pressed")
+                    } label: {
+                        APButton(title: "$30.99 - Place order")
+                    }
+                    .padding(25)
+                    
                 }
-                .listStyle(.plain)
                 
-                Button {
-                    print("Place Order Button Pressed")
-                } label: {
-                    APButton(title: "$30.99 - Place order")
+                if orderItems.isEmpty {
+                    
+                    EmptyState(imageName: "empty-order",
+                               message: "You have no item in your order.\nPlease add an appetizer!")
+                    
                 }
-                .padding(25)
-
             }
             .navigationTitle("Order")
             
@@ -36,6 +45,11 @@ struct OrderView: View {
     }
     func deleteItem(at offset: IndexSet) {
         orderItems.remove(atOffsets: offset)
+        withAnimation(.easeInOut(duration: 2)) {
+            if orderItems.isEmpty {
+                orderItems = []
+            }
+        }
     }
 }
 
