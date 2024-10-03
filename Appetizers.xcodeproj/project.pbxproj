@@ -30,6 +30,7 @@
 		E9DD15B92CAC4DE20077C121 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15B82CAC4DE20077C121 /* String+Extension.swift */; };
 		E9DD15BB2CAC5CFE0077C121 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15BA2CAC5CFE0077C121 /* User.swift */; };
 		E9DD15BE2CAEC1BF0077C121 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15BD2CAEC1BF0077C121 /* EmptyState.swift */; };
+		E9DD15C02CAECDA70077C121 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD15BF2CAECDA70077C121 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		E9DD15B82CAC4DE20077C121 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E9DD15BA2CAC5CFE0077C121 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9DD15BD2CAEC1BF0077C121 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		E9DD15BF2CAECDA70077C121 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				E97BB5592C98C975003B9CB5 /* Appetizer.swift */,
 				E9DD15BA2CAC5CFE0077C121 /* User.swift */,
+				E9DD15BF2CAECDA70077C121 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				E97BB55A2C98C975003B9CB5 /* Appetizer.swift in Sources */,
 				E97BB5602C98DA9A003B9CB5 /* APError.swift in Sources */,
 				E9DD15B52CAC27690077C121 /* XDismissButton.swift in Sources */,
+				E9DD15C02CAECDA70077C121 /* Order.swift in Sources */,
 				E9DD15B92CAC4DE20077C121 /* String+Extension.swift in Sources */,
 				E97BB55C2C98D583003B9CB5 /* AppetizerListCell.swift in Sources */,
 				E9DD15B72CAC48600077C121 /* AccountViewModel.swift in Sources */,
