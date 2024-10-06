@@ -20,12 +20,16 @@ struct ActivityIndicator: UIViewRepresentable {
     func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) { }
 }
 
+// MARK: - Now we are using the swiftui progress view instead of the uikit indicator.
 struct loadingView: View {
     var body: some View {
         ZStack {
             Color(.systemBackground)
                 .ignoresSafeArea()
-            ActivityIndicator()
+            ProgressView()
+                .progressViewStyle(.circular)
+                .scaleEffect(2)
+                .tint(.brandPrimary)
         }
     }
 }
