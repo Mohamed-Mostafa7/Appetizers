@@ -60,6 +60,7 @@ struct AccountView: View {
                     Text("Requests")
                 }
             }
+            .tint(.brandPrimary)
             .toolbar{
                 ToolbarItemGroup(placement: .keyboard) {
                     Button("Dismiss") {focusedTextField = nil}
