@@ -18,7 +18,9 @@ struct AppetizerListView: View {
                     AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
                             viewModel.selectedAppetizer = appetizer
-                            viewModel.isShowingDetail = true
+                            withAnimation(.easeIn(duration: 0.3)) {
+                                viewModel.isShowingDetail = true
+                            }
                         }
                 }
                 .listStyle(.plain)
